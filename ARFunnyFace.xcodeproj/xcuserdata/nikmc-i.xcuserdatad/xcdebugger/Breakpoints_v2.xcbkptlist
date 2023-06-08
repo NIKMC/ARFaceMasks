@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7651A8C8-6EB1-40DD-A703-C092DEAC8B30"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DCBF999B-D4BF-4A4D-95D0-0735991920D2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ARFunnyFace/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "updateUIView(_:context:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DCBF999B-D4BF-4A4D-95D0-0735991920D2 - a9dd9493a66f33c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ARFunnyFace.ARViewContainer.updateUIView(_: RealityKit.ARView, context: SwiftUI.UIViewRepresentableContext&lt;ARFunnyFace.ARViewContainer&gt;) -&gt; ()"
+                  moduleName = "ARFunnyFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikmc-i/Development/iOS/Personal/Projects/AR/ARFunnyFace/ARFunnyFace/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "1688">
+               </Location>
+               <Location
+                  uuid = "DCBF999B-D4BF-4A4D-95D0-0735991920D2 - a9dd9493a66f3320"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ARFunnyFace.ARViewContainer.updateUIView(_: RealityKit.ARView, context: SwiftUI.UIViewRepresentableContext&lt;ARFunnyFace.ARViewContainer&gt;) -&gt; ()"
+                  moduleName = "ARFunnyFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikmc-i/Development/iOS/Personal/Projects/AR/ARFunnyFace/ARFunnyFace/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "140"
+                  endingLineNumber = "140"
+                  offsetFromSymbolStart = "1556">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EBC3B050-3023-4AED-9F92-CE0827BFD377"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ARFunnyFace/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "updateUIView(_:context:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EBC3B050-3023-4AED-9F92-CE0827BFD377 - a9dd9493a66f33c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ARFunnyFace.ARViewContainer.updateUIView(_: RealityKit.ARView, context: SwiftUI.UIViewRepresentableContext&lt;ARFunnyFace.ARViewContainer&gt;) -&gt; ()"
+                  moduleName = "ARFunnyFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikmc-i/Development/iOS/Personal/Projects/AR/ARFunnyFace/ARFunnyFace/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "1688">
+               </Location>
+               <Location
+                  uuid = "EBC3B050-3023-4AED-9F92-CE0827BFD377 - a9dd9493a66f33e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ARFunnyFace.ARViewContainer.updateUIView(_: RealityKit.ARView, context: SwiftUI.UIViewRepresentableContext&lt;ARFunnyFace.ARViewContainer&gt;) -&gt; ()"
+                  moduleName = "ARFunnyFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikmc-i/Development/iOS/Personal/Projects/AR/ARFunnyFace/ARFunnyFace/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "142"
+                  endingLineNumber = "142"
+                  offsetFromSymbolStart = "1688">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2E7A1450-EB53-456A-B083-BB8867C4E467"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ARFunnyFace/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "updateUIView(_:context:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2E7A1450-EB53-456A-B083-BB8867C4E467 - a9dd9493a66f33e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ARFunnyFace.ARViewContainer.updateUIView(_: RealityKit.ARView, context: SwiftUI.UIViewRepresentableContext&lt;ARFunnyFace.ARViewContainer&gt;) -&gt; ()"
+                  moduleName = "ARFunnyFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikmc-i/Development/iOS/Personal/Projects/AR/ARFunnyFace/ARFunnyFace/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "142"
+                  endingLineNumber = "142"
+                  offsetFromSymbolStart = "1768">
+               </Location>
+               <Location
+                  uuid = "2E7A1450-EB53-456A-B083-BB8867C4E467 - a9dd9493a66f33e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ARFunnyFace.ARViewContainer.updateUIView(_: RealityKit.ARView, context: SwiftUI.UIViewRepresentableContext&lt;ARFunnyFace.ARViewContainer&gt;) -&gt; ()"
+                  moduleName = "ARFunnyFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikmc-i/Development/iOS/Personal/Projects/AR/ARFunnyFace/ARFunnyFace/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "142"
+                  endingLineNumber = "142"
+                  offsetFromSymbolStart = "1688">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
