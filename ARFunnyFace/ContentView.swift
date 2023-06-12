@@ -10,6 +10,7 @@ import RealityKit
 import ARKit
 
 var arView: ARView!
+var robot: Experience.Robot!
 
 struct ContentView : View {
     
@@ -17,6 +18,7 @@ struct ContentView : View {
     
     @State private var propId: Int = 0
     @State private var isFrontCamera: Bool = false
+    
     // MARK: - Body
     
     var body: some View {
@@ -36,8 +38,6 @@ struct ContentView : View {
                     }
                 }
                 Spacer()
-                
-                
                 // 3
                 HStack {
                     
@@ -60,7 +60,7 @@ struct ContentView : View {
                     Spacer()
                     
                     Button(action: {
-                        self.propId = self.propId >= 2 ? 2 : self.propId + 1
+                        self.propId = self.propId >= 3 ? 3 : self.propId + 1
                     }) {
                         Image("NextButton").clipShape(Circle())
                     }
@@ -104,7 +104,7 @@ struct ARViewContainer: UIViewRepresentable {
         
         // Add the box anchor to the scene
 //        arView.scene.anchors.append(boxAnchor)
-        
+        arView.session.delegate = context.coordinator
         return arView
         
     }
@@ -112,6 +112,7 @@ struct ARViewContainer: UIViewRepresentable {
     func updateUIView(_ uiView: ARView, context: Context) {
         uiView.scene.anchors.removeAll()
         if isFrontCamera {
+            robot = nil
             let arConfiguration = ARFaceTrackingConfiguration()
             uiView.session.run(arConfiguration, options: [.resetTracking, .removeExistingAnchors])
             
@@ -129,6 +130,11 @@ struct ARViewContainer: UIViewRepresentable {
                 guard let arAnchor = try? Experience.loadMustache() else { break
                 }
                 uiView.scene.anchors.append(arAnchor)
+            case 3:
+                guard let arAnchor = try? Experience.loadRobot() else { break
+                }
+                uiView.scene.anchors.append(arAnchor)
+                robot = arAnchor
             default:
                 break
             }
@@ -145,6 +151,56 @@ struct ARViewContainer: UIViewRepresentable {
         }
     }
     
+    func makeCoordinator() -> ARSessionDelegate {
+        ARDelegateHandler(self)
+    }
+    
+    class ARDelegateHandler: NSObject, ARSessionDelegate {
+        var arViewContainer: ARViewContainer
+        
+        init(_ control: ARViewContainer) {
+            arViewContainer = control
+            super.init()
+        }
+        
+        func session(_ session: ARSession, didUpdate anchors: [ARAnchor]) {
+            guard robot != nil else { return }
+            
+            var faceAnchor: ARFaceAnchor?
+            for anchor in anchors {
+                if let a = anchor as? ARFaceAnchor {
+                    faceAnchor = a
+                }
+            }
+            
+            let blendShapes = faceAnchor?.blendShapes
+            let eyeBlinkLeft = blendShapes?[.eyeBlinkLeft]?.floatValue
+            let eyeBlinkRight = blendShapes?[.eyeBlinkRight]?.floatValue
+            
+            let browInnerUp = blendShapes?[.browInnerUp]?.floatValue
+            let browDownLeft = blendShapes?[.browDownLeft]?.floatValue
+            let browDownRight = blendShapes?[.browDownRight]?.floatValue
+            
+            let jawOpen = blendShapes?[.jawOpen]?.floatValue
+            
+            robot.eyeLidL?.orientation = simd_mul(
+                simd_quatf(angle: Deg2Rad(-120 + (90 * eyeBlinkLeft!)),
+                           axis: [1,0,0]),
+                simd_quatf(angle: Deg2Rad((90 * browDownLeft!) - (30 * browInnerUp!)),
+                           axis: [0,0,1]))
+            
+            robot.eyeLidR?.orientation = simd_mul(
+                simd_quatf(angle: Deg2Rad(-120 + (90 * eyeBlinkRight!)),
+                           axis: [1,0,0]),
+                simd_quatf(angle: Deg2Rad((90 * browDownRight!) - (30 * browInnerUp!)),
+                           axis: [0,0,1]))
+            
+        }
+        
+        func Deg2Rad(_ value: Float) -> Float {
+            return value * .pi / 180
+        }
+    }
 }
 
 #if DEBUG
