@@ -780,7 +780,320 @@
                 "name" : "face"
               },
               "behaviors" : [
+                {
+                  "__content" : [
+                    {
+                      "accessibility" : {
+                        "__content" : [
+                          {
+                            "isEnabled" : false
+                          }
+                        ],
+                        "__version" : 1
+                      },
+                      "actionGroups" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "angularCoefficient" : 1,
+                                          "animationStyle" : "basic",
+                                          "buildOutAnimationType" : "none",
+                                          "distance" : 1,
+                                          "duration" : 1,
+                                          "fadeOut" : true,
+                                          "linearCoefficient" : 1,
+                                          "moveEase" : "easeInOut",
+                                          "respectPhysics" : false,
+                                          "target" : [
+                                            "6442B472-0B58-4AFC-8022-909FBA9D0D36",
+                                            "F2FDA8A1-C972-400E-8BFA-1177CFF8495B"
+                                          ]
+                                        },
+                                        "name" : {
+                                          "type" : "hide"
+                                        }
+                                      },
+                                      "identifier" : "E9B9D880-5744-418A-B8D0-2E5A2A519F6B",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "B2B29FA3-912B-4E1A-8C76-80313DE3A323",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ],
+                      "color" : [
+                        0.364705890417099,
+                        0.74117648601531982,
+                        0.69019609689712524,
+                        1
+                      ],
+                      "identifier" : "A1670D49-721A-4367-B581-B5ABF3076004",
+                      "isEnabled" : true,
+                      "isLooping" : false,
+                      "isModal" : false,
+                      "name" : "Start",
+                      "triggers" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurationBox" : {
+                                "configuration" : {
 
+                                },
+                                "name" : "start"
+                              },
+                              "identifier" : "DD7223A0-CFCE-401C-B86C-D2005598D3F2",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ]
+                    }
+                  ],
+                  "__version" : 3
+                },
+                {
+                  "__content" : [
+                    {
+                      "accessibility" : {
+                        "__content" : [
+                          {
+                            "isEnabled" : false
+                          }
+                        ],
+                        "__version" : 1
+                      },
+                      "actionGroups" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "angularCoefficient" : 1,
+                                          "animationStyle" : "basic",
+                                          "buildInAnimationType" : "none",
+                                          "distance" : 1,
+                                          "duration" : 3,
+                                          "fadeIn" : true,
+                                          "linearCoefficient" : 1,
+                                          "moveEase" : "easeInOut",
+                                          "respectPhysics" : false,
+                                          "target" : [
+                                            "F2FDA8A1-C972-400E-8BFA-1177CFF8495B",
+                                            "6442B472-0B58-4AFC-8022-909FBA9D0D36"
+                                          ]
+                                        },
+                                        "name" : {
+                                          "type" : "show"
+                                        }
+                                      },
+                                      "identifier" : "89F9532F-8FA6-4D4E-BB11-8BD972A791BF",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "897D70F9-7CF8-4889-B944-185683E357B3",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        },
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "audioType" : "play",
+                                          "filePath" : "audio:com.apple.rc.audio.dj-tricks.dj-scratching-and-effect-23\/DJ%20Scratching%20and%20Effect%2023.caf",
+                                          "loops" : false,
+                                          "multiplePerformType" : "ignore request",
+                                          "target" : [
+                                            "F2FDA8A1-C972-400E-8BFA-1177CFF8495B",
+                                            "6442B472-0B58-4AFC-8022-909FBA9D0D36"
+                                          ],
+                                          "volume" : 0.5
+                                        },
+                                        "name" : {
+                                          "type" : "audio"
+                                        }
+                                      },
+                                      "identifier" : "1A64CC36-EF06-4A7F-9B67-6732E14311C5",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "B05CBE43-78B3-4E9B-AF85-601B0A30EAA0",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        },
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "angularCoefficient" : 1,
+                                          "animationStyle" : "basic",
+                                          "buildOutAnimationType" : "none",
+                                          "distance" : 1,
+                                          "duration" : 3,
+                                          "fadeOut" : true,
+                                          "linearCoefficient" : 1,
+                                          "moveEase" : "easeInOut",
+                                          "respectPhysics" : false,
+                                          "target" : [
+                                            "6442B472-0B58-4AFC-8022-909FBA9D0D36",
+                                            "F2FDA8A1-C972-400E-8BFA-1177CFF8495B"
+                                          ]
+                                        },
+                                        "name" : {
+                                          "type" : "hide"
+                                        }
+                                      },
+                                      "identifier" : "2FF0F838-8D24-4CE5-9BBD-10AE83E66E32",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "ED603613-CBCC-45B6-B400-ACB4252CEA21",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        },
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "audioType" : "play",
+                                          "filePath" : "audio:com.apple.rc.audio.dj-tricks.dj-scratching-and-effect-22\/DJ%20Scratching%20and%20Effect%2022.caf",
+                                          "loops" : false,
+                                          "multiplePerformType" : "ignore request",
+                                          "target" : [
+                                            "6442B472-0B58-4AFC-8022-909FBA9D0D36",
+                                            "F2FDA8A1-C972-400E-8BFA-1177CFF8495B"
+                                          ],
+                                          "volume" : 0.5
+                                        },
+                                        "name" : {
+                                          "type" : "audio"
+                                        }
+                                      },
+                                      "identifier" : "9CAF4751-5E03-4620-96E9-98762CF65230",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "25C3986B-F5F6-494D-9FEE-55D1DC8EB0E0",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        },
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "target" : [
+                                            "F2FDA8A1-C972-400E-8BFA-1177CFF8495B",
+                                            "6442B472-0B58-4AFC-8022-909FBA9D0D36"
+                                          ],
+                                          "userIdentifier" : "LasersDone"
+                                        },
+                                        "name" : {
+                                          "type" : "custom"
+                                        }
+                                      },
+                                      "identifier" : "F7C3F9EB-AAC5-4C5E-AEF9-D0845A14995B",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "B0CBFB21-5F24-4605-ACC0-7F657C9E0789",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ],
+                      "color" : [
+                        0.21568627655506134,
+                        0.72549021244049072,
+                        0.80000001192092896,
+                        1
+                      ],
+                      "identifier" : "2288613D-21F6-40E6-866D-E641884E8FED",
+                      "isEnabled" : true,
+                      "isLooping" : false,
+                      "isModal" : false,
+                      "name" : "Lasers",
+                      "triggers" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurationBox" : {
+                                "configuration" : {
+                                  "userIdentifier" : "ShowLasers"
+                                },
+                                "name" : "custom"
+                              },
+                              "identifier" : "17CCE3E1-15A6-4579-A41B-92394627D68A",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ]
+                    }
+                  ],
+                  "__version" : 3
+                }
               ],
               "gravity" : [
                 0,
@@ -791,6 +1104,99 @@
               "material" : "concrete",
               "overrides" : {
                 "children" : {
+                  "3C019640-4664-45A9-9EF7-05A60D3BC54A" : {
+                    "overrides" : {
+                      "arguments" : [
+                        [
+                          "bevelRadius",
+                          {
+                            "typeName" : "Double",
+                            "value" : 0.0050000000000000001
+                          }
+                        ],
+                        [
+                          "diameter",
+                          {
+                            "typeName" : "Double",
+                            "value" : 0.01
+                          }
+                        ],
+                        [
+                          "height",
+                          {
+                            "typeName" : "Double",
+                            "value" : 1
+                          }
+                        ],
+                        [
+                          "material",
+                          {
+                            "typeName" : "String",
+                            "value" : "standard"
+                          }
+                        ],
+                        [
+                          "materialColor",
+                          {
+                            "typeName" : "double4",
+                            "value" : [
+                              1,
+                              1,
+                              0.20000000298023224,
+                              1
+                            ]
+                          }
+                        ],
+                        [
+                          "type",
+                          {
+                            "typeName" : "String",
+                            "value" : "cylinder"
+                          }
+                        ]
+                      ],
+                      "factory" : {
+                        "identifier" : "com.apple.rc.af.CoreAssetFactories.PrimitiveShapeAssetFactory",
+                        "version" : "1.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "F2FDA8A1-C972-400E-8BFA-1177CFF8495B"
+                          }
+                        ],
+                        [
+                          "entityName",
+                          {
+                            "typeName" : "String",
+                            "value" : "Laser_L"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        -0.039999999105930328,
+                        0.59999996423721313,
+                        -0.045000001788139343,
+                        1
+                      ]
+                    }
+                  },
                   "4D2B1CEE-577E-4B30-8818-034C67FF5332" : {
                     "overrides" : {
                       "children" : {
@@ -1013,6 +1419,92 @@
                         -0.032000001519918442,
                         0.059999998658895493,
                         -0.046999990940093994,
+                        1
+                      ]
+                    }
+                  },
+                  "77ACE6FF-5EE5-43E1-B7B9-0C259DAE8DF6" : {
+                    "overrides" : {
+                      "arguments" : [
+                        [
+                          "diameter",
+                          {
+                            "typeName" : "Double",
+                            "value" : 0.01
+                          }
+                        ],
+                        [
+                          "height",
+                          {
+                            "typeName" : "Double",
+                            "value" : 1
+                          }
+                        ],
+                        [
+                          "material",
+                          {
+                            "typeName" : "String",
+                            "value" : "standard"
+                          }
+                        ],
+                        [
+                          "materialColor",
+                          {
+                            "typeName" : "double4",
+                            "value" : [
+                              1,
+                              1,
+                              0.20000000298023224,
+                              1
+                            ]
+                          }
+                        ],
+                        [
+                          "type",
+                          {
+                            "typeName" : "String",
+                            "value" : "cylinder"
+                          }
+                        ]
+                      ],
+                      "factory" : {
+                        "identifier" : "com.apple.rc.af.CoreAssetFactories.PrimitiveShapeAssetFactory",
+                        "version" : "1.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "6442B472-0B58-4AFC-8022-909FBA9D0D36"
+                          }
+                        ],
+                        [
+                          "entityName",
+                          {
+                            "typeName" : "String",
+                            "value" : "Laser_L"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0.039999999105930328,
+                        0.60000002384185791,
+                        -0.045000001788139343,
                         1
                       ]
                     }
@@ -1534,12 +2026,12 @@
                         0,
                         0,
                         0,
-                        -0.5,
-                        -0.86602532863616943,
+                        5.9604612800967516e-08,
+                        -0.99999940395355225,
                         0,
                         0,
-                        0.86602532863616943,
-                        -0.5,
+                        0.99999940395355225,
+                        5.9604612800967516e-08,
                         0,
                         0.032000001519918442,
                         0.059999998658895493,
@@ -1564,27 +2056,27 @@
               "title" : "Robot",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.99686717987060547,
-                  -1.0805668182456429e-07,
-                  0.079093784093856812,
+                  0.97843033075332642,
+                  -1.1362134699766102e-07,
+                  -0.20657666027545929,
                   0,
-                  -0.002614092081785202,
-                  0.99945360422134399,
-                  0.032948307693004608,
+                  -0.058548446744680405,
+                  0.95899504423141479,
+                  -0.27730950713157654,
                   0,
-                  -0.079050660133361816,
-                  -0.03305184468626976,
-                  0.99632251262664795,
+                  0.19810591638088226,
+                  0.28342288732528687,
+                  0.93830984830856323,
                   0,
-                  0.0064053270034492016,
-                  0.10250559449195862,
-                  0.82370096445083618,
+                  0.53490620851516724,
+                  0.12656092643737793,
+                  2.2479994297027588,
                   1
                 ],
                 "sceneTransform" : [
                   1,
                   0,
-                  -0,
+                  0,
                   0,
                   0,
                   0,

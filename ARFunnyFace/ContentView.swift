@@ -17,7 +17,7 @@ struct ContentView : View {
     // MARK: - Properties
     
     @State private var propId: Int = 0
-    @State private var isFrontCamera: Bool = false
+    @State private var isFrontCamera: Bool = true
     
     // MARK: - Body
     
@@ -157,6 +157,7 @@ struct ARViewContainer: UIViewRepresentable {
     
     class ARDelegateHandler: NSObject, ARSessionDelegate {
         var arViewContainer: ARViewContainer
+        var isLasersDone = true
         
         init(_ control: ARViewContainer) {
             arViewContainer = control
@@ -186,14 +187,27 @@ struct ARViewContainer: UIViewRepresentable {
             robot.eyeLidL?.orientation = simd_mul(
                 simd_quatf(angle: Deg2Rad(-120 + (90 * eyeBlinkLeft!)),
                            axis: [1,0,0]),
-                simd_quatf(angle: Deg2Rad((90 * browDownLeft!) - (30 * browInnerUp!)),
+                simd_quatf(angle: Deg2Rad((30 * browDownLeft!) - (30 * browInnerUp!)),
                            axis: [0,0,1]))
-            
+
             robot.eyeLidR?.orientation = simd_mul(
                 simd_quatf(angle: Deg2Rad(-120 + (90 * eyeBlinkRight!)),
                            axis: [1,0,0]),
-                simd_quatf(angle: Deg2Rad((90 * browDownRight!) - (30 * browInnerUp!)),
+                simd_quatf(angle: Deg2Rad((-30 * browDownRight!) - (-30 * browInnerUp!)),
                            axis: [0,0,1]))
+           
+            robot.jaw?.orientation = simd_quatf(
+              angle: Deg2Rad(-100 + (60 * jawOpen!)),
+              axis: [1, 0, 0])
+            
+            
+            if (self.isLasersDone == true && jawOpen! > 0.9) {
+                self.isLasersDone = false
+                robot.notifications.showLasers.post()
+                robot.actions.lasersDone.onAction = { _ in
+                    self.isLasersDone = true
+                }
+            }
             
         }
         
